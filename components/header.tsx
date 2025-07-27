@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils'
 import { useScroll } from 'motion/react'
 import { ModeSwitcher } from './mode-switcher'
 import Image from 'next/image'
+import MenuButtons from './menu-buttons'
 
 export const HeroHeader = () => {
     const [menuState, setMenuState] = React.useState(false)
@@ -59,21 +60,7 @@ export const HeroHeader = () => {
 
                                 </Button>
                                 <ModeSwitcher/>
-                                <Button
-                                    asChild
-                                    variant="outline"
-                                    size="sm">
-                                    <Link href="/login">
-                                        <span>Login</span>
-                                    </Link>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm">
-                                    <Link href="/signup">
-                                        <span>Sign Up</span>
-                                    </Link>
-                                </Button>
+                                <MenuButtons/>
                             </div>
                         </div>
                     </div>
