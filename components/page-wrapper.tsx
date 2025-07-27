@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { SidebarTrigger } from "./ui/sidebar";
 import Logout from "./logout";
-import { Fragment, Suspense } from "react";
+import { Fragment } from "react";
 import { ModeSwitcher } from "./mode-switcher";
 
 interface PageWrapperProps {

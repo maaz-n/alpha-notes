@@ -66,6 +66,7 @@ const CreateNotebookButton = () => {
         toast.error(response.message);
       }
     } catch (error) {
+      console.error("Error occured: ", error)
       toast.error("Failed to create notebook");
     } finally {
       setIsLoading(false);

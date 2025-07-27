@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import CreateNotebookButton from "@/components/create-notebook-button";
 import NotebookCard from "@/components/notebook-card";
 import { PageWrapper } from "@/components/page-wrapper";
