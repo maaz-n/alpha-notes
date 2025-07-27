@@ -54,7 +54,7 @@ export function LoginForm({
       const response = await signInUser(values.email, values.password);
       if (response.success) {
         toast.success(response.message);
-        router.push("/dashboard");
+        window.location.href = "/dashboard"
       } else {
         toast.error(response.message);
       }
