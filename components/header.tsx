@@ -6,7 +6,6 @@ import React from 'react'
 import { cn } from '@/lib/utils'
 import { useScroll } from 'motion/react'
 import { ModeSwitcher } from './mode-switcher'
-import Image from 'next/image'
 import MenuButtons from './menu-buttons'
 
 export const HeroHeader = () => {

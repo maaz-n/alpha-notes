@@ -27,6 +27,7 @@ import { authClient } from "@/lib/auth-client";
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { Card, CardContent, CardHeader } from "./ui/card";
 
 const formSchema = z.object({
   name: z.string().min(2).max(50),
@@ -75,7 +76,21 @@ const CreateNotebookButton = () => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button className="w-max">Create Notebook</Button>
+        {/* <Button className="w-max">Create Notebook</Button> */}
+        <Card className="cursor-pointer">
+      <CardHeader>
+        <CardContent>
+          <div className="container flex flex-col items-center gap-2 font-bold mx-auto mt-8">
+            <div className="sign text-2xl">
+              <span>+</span>
+            </div>
+            <div className="text">
+              <span>Create Notebook</span>
+            </div>
+          </div>
+        </CardContent>
+      </CardHeader>
+    </Card>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>

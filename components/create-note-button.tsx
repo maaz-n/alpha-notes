@@ -26,6 +26,7 @@ import { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { createNote } from "@/server/notes";
+import { Card, CardContent, CardHeader } from "./ui/card";
 
 const formSchema = z.object({
   name: z.string().min(2).max(50),
@@ -69,7 +70,21 @@ const CreateNoteButton = ({notebookId}: {notebookId: string}) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button className="w-max">Create Note</Button>
+        {/* <Button className="w-max">Create Note</Button> */}
+        <Card className="cursor-pointer">
+              <CardHeader>
+                <CardContent>
+                  <div className="container flex flex-col items-center gap-2 font-bold mx-auto mt-5">
+                    <div className="sign text-2xl">
+                      <span>+</span>
+                    </div>
+                    <div className="text">
+                      <span>Create Note</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </CardHeader>
+            </Card>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>

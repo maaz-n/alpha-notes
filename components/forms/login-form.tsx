@@ -26,7 +26,6 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 
 const formSchema = z.object({
@@ -39,7 +38,6 @@ export function LoginForm({
   ...props
 }: React.ComponentProps<"div">) {
   const [isLoading, setIsLoading] = useState(false);
-  const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {

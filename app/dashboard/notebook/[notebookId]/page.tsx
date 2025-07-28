@@ -21,8 +21,9 @@ const NotePage = async ({ params }: { params: Params }) => {
         ] 
       }
     >
-      <CreateNoteButton notebookId={notebookId}/>
+      <h1 className="font-bold text-center my-3 text-3xl">{notebook?.name}</h1>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <CreateNoteButton notebookId={notebookId}/>
 
       {notebook?.notes.map((note) => (
         <NoteCard key={note.id} note={note}/>

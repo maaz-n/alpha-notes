@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import {
   Card,
+  CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -52,6 +53,9 @@ const NoteCard = ({ note }: NoteCardProps) => {
       <CardHeader>
         <CardTitle>{note.title}</CardTitle>
       </CardHeader>
+      <CardContent>
+        {" "}
+      </CardContent>
       <CardFooter className="flex justify-between">
         <Link href={`/dashboard/notebook/${note.notebookId}/note/${note.id}`}>
           <Button variant={"outline"}>View</Button>
