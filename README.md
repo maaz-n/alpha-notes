@@ -14,12 +14,12 @@ AlphaNotes is a simple, full-stack web application designed to help users manage
 
 ## 🛠️ Technologies Used
 
-- **BetterAuth** – Lightweight and secure authentication system
-- **PostgreSQL** – Relational database for storing user data and notes
-- **Drizzle ORM** – Type-safe ORM for database access
-- **TypeScript** – Static type checking for better code reliability
-- **Tailwind CSS** – Utility-first CSS framework for styling
-- **Next.js** – React framework for full-stack capabilities
+- **BetterAuth** – Lightweight and secure authentication system.
+- **PostgreSQL** – Relational database for storing user data and notes.
+- **Drizzle ORM** – Type-safe ORM for database access.
+- **TypeScript** – Static type checking for better code reliability.
+- **Tailwind CSS** – Utility-first CSS framework for styling.
+- **Next.js** – React framework for full-stack capabilities.
 
 ---
 
